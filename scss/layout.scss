@@ -1,0 +1,48 @@
+$hederHeight: 130px;
+#header {
+  width: 100%;
+  .logo {
+    position: absolute;
+    top: 52px;
+    z-index: 900;
+    width: 265px;
+    a {
+      display: inline-block;
+      &:first-child {
+        margin-right: 5px;
+      }
+      &:last-child {
+        position: relative;
+        top: 21px;
+      }
+    }
+  }
+  .top-box {
+    z-index: 99;
+    height: 50px;
+    border-bottom: solid 1px #d7d7d7;
+    background-color: #fff;
+    display: block;
+    margin: 0 auto;
+    line-height: 50px;
+    width: 100%;
+    .top-menu {
+      height: 100%;
+      display: block;
+      position: relative;
+      .link {
+        display: block;
+        margin: 0 auto;
+        float: left;
+        li {
+          transition-duration: 0.3s;
+          transition-property: transform;
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+          transform: translateZ(0);
+          box-shadow: 0 0 1px rgb(0, 0, 0);
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

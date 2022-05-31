@@ -1,20 +1,8 @@
 @charset "UTF-8";
-* {margin: 0; padding: 0;}
-ul,li {list-style: none;}
-#header{
-  width: 100%;
-  .logo{
-    position: absolute;
-    top: 52px;
-    z-index: 900;
-    width: 265px;
-    a:first-child {
-      margin-right: 5px;
-      &.flag {
-        position: relative;
-        top: 21px;
-      }
-    }
-
-  }
-}
+@import "var.scss"; //공통 변수
+// @import "mixin.scss"; //공통 mixin
+@import "reset.scss"; //css 초기화
+// @import "common.scss"; //공통요소
+// @import "component.scss"; //공통 컴포넌트
+@import "layout.scss"; //공통 레이아웃
+@import "main.scss";
