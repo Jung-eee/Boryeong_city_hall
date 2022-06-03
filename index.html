@@ -155,15 +155,15 @@
           <div class="weather">
             <div class="weather-box">
               <small>현재 온도</small>
-              <p>21℃</p>
+              <p></p>
             </div>
             <div class="fine_dust">
               <small>미세먼지</small>
-              <p>좋음</p>
+              <p></p>
             </div>
             <div class="wind">
               <small>풍량</small>
-              <p>많음</p>
+              <p></p>
             </div>
           </div>
         </div>
@@ -171,7 +171,21 @@
     </div>
     <div class="main_container">
       <div class="mc_box">
-        
+        <div class="mc_mid">
+          <article class="main_search">
+            <div class="search_input">
+              <form action="index.html" method="post">
+                <input type="hidden" name="search" value="통합검색">
+                <fieldset>
+                  <legend>통합검색</legend>
+                  <label for="search" class="hidden">통합 검색 입력</label>
+                  <input type="text" name="sr" placeholder="검색어를 입력하세요" class="total_search" title="검색어를 입력하세요">
+                  <input type="submit" value="검색">
+                </fieldset>
+              </form>
+            </div>
+          </article>
+        </div>
       </div>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>

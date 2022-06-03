@@ -232,3 +232,76 @@ html, body{font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box;}
     }
   }
 }
+.main_container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-top: 26px;
+  left: 0;
+  background-image: url('../img/main/bg_pattern2.png');
+  background-repeat: repeat;
+  background-position: 0 12px;
+  .mc_box {
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    .mc_mid {
+      max-width: 1430px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 23px;
+      padding: 0 15px;
+      box-sizing: border-box;
+      .main_search {
+        display: inline-block;
+        width: 45%;
+        .search_input {
+          width: 100%;
+          input {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 400;
+          }
+          fieldset {
+            position: relative;
+            padding: 5px;
+            background: url('../img/main/main_search_bg.gif') no-repeat center;
+            box-sizing: border-box;
+            legend, .hiiden {
+              line-height: 1px;
+              font-size: 1px;
+              position: absolute;
+              left: -10000px;
+              top: 0;
+              overflow: hidden;
+              text-indent: -30000px;
+              input[name=sr] {
+                width: 100%;
+                height: 48px;
+                padding: 0 50px 0 15px;
+                font-size: 15px;
+                color: #777;
+                box-sizing: border-box;
+              }
+              input[type=submit] {
+                background-image: url('../img/main/icons-search-30.png');
+                background-repeat: no-repeat;
+                position: absolute;
+                right: 15px;
+                top: 13px;
+                z-index: 5;
+                cursor: pointer;
+                width: 30px;
+                height: 30px;
+                padding: 0;
+                border: 0;
+                background-color: transparent;
+                text-indent: -9999px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
